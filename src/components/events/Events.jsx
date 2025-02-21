@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Events.css"; // Import the CSS file (if you want to keep styles separate)
+import "./Events.css"; 
 
 const Events = () => {
   // Load particles.js dynamically
