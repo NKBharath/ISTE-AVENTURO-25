@@ -15,8 +15,8 @@ body {
   color: white;
 }
 
- /* Particles Background */
- #particles-js {
+/* Particles Background */
+#particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -26,6 +26,7 @@ body {
   background: #000;
 }
 
+/* Navigation Bar */
 nav {
   background: #000000;
   height: 80px;
@@ -64,14 +65,18 @@ a:hover {
   background: #008238;
 }
 
+/* Container for Cards */
 .container4 {
   margin: 10px;
   padding: 100px;
 }
 
+/* Courses Section */
 .ag-format-container {
-  width: 1142px;
+  width: 100%;
+  max-width: 1142px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .ag-courses_box {
@@ -162,6 +167,7 @@ a:hover {
   background-color: #008f1f;
 }
 
+/* Footer */
 footer {
   bottom: 0;
   width: 100%;
@@ -173,25 +179,43 @@ footer {
   font-weight: bold;
 }
 
+/* Media Queries for Mobile View */
 @media only screen and (max-width: 979px) {
+  .container4 {
+    padding: 50px 20px; 
+  }
+
   .ag-courses_item {
-    flex-basis: calc(50% - 30px);
+    flex-basis: calc(50% - 30px); 
   }
 
   .ag-courses-item_title {
-    font-size: 14px;
+    font-size: 24px; 
+  }
+
+  nav ul {
+    gap: 10px; 
+  }
+
+  nav ul li a {
+    font-size: 14px; 
   }
 }
 
 @media only screen and (max-width: 639px) {
+  .container4 {
+    padding: 30px 10px; 
+    margin-top: 50px;
+  }
+
   .ag-courses_item {
-    flex-basis: 100%;
+    flex-basis: 100%; 
+    margin: 0 0 20px;
   }
 
   .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-    font-size: 10px;
+    min-height: auto; 
+    font-size: 20px; 
   }
 
   .ag-courses-item_link {
@@ -199,6 +223,24 @@ footer {
   }
 
   .ag-courses-item_date-box {
-    font-size: 10px;
+    font-size: 14px; 
+  }
+
+  nav {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  label.logo {
+    font-size: 18px; 
+  }
+
+  nav ul li a {
+    font-size: 12px; 
+    padding: 6px 8px; 
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
