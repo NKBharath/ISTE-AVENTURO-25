@@ -34,7 +34,6 @@ const Home = () => {
         <ul>
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/events">Events</Link></li>
-          <li><Link to="/timeline">Timeline</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>

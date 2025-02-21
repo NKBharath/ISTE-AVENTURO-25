@@ -105,13 +105,10 @@ const Events = () => {
         </label>
         <ul>
           <li>
-            <a href="home.html">Home</a>
+            <a href="/home">Home</a>
           </li>
           <li>
-            <a href="events.html">Events</a>
-          </li>
-          <li>
-            <a href="timeline.html">Timeline</a>
+            <a href="/events">Events</a>
           </li>
           <li>
             <a href="contact.html">Contact</a>

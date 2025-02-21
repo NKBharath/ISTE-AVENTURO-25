@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/home/Home"; // Import Home component
 import Event from "./components/events/Events"; // Import Event component
-import Event from "./components/events/Events"; // Import Home component
 import particlesConfig from "./particles-config.json";
 import "./App.css";
 import image1 from "./assets/3d_icons.png";
@@ -97,7 +96,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/events" element={<Event />} />
         <Route path="/events" element={<Event />} />
       </Routes>
     </Router>
