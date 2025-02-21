@@ -38,9 +38,6 @@ const Events = () => {
             <a href="/events">Events</a>
           </li>
           <li>
-            <a href="timeline.html">Timeline</a>
-          </li>
-          <li>
             <a href="contact.html">Contact</a>
           </li>
         </ul>
@@ -65,7 +62,7 @@ const Events = () => {
                 <br />
                 <button
                   className="custom-btn"
-                  onClick={() => (window.location.href = "https://www.example.com")}
+                  onClick={() => window.open("https://forms.gle/D6o1SoXx6g6RciwA9")}
                 >
                   Register
                 </button>
@@ -95,7 +92,37 @@ const Events = () => {
                 <br />
                 <button
                   className="custom-btn1"
-                  onClick={() => (window.location.href = "https://www.example.com")}
+                  onClick={() => window.open("https://forms.gle/D6o1SoXx6g6RciwA9")}
+                >
+                  Register
+                </button>
+                <div className="line topl"></div>
+                <div className="line leftl"></div>
+                <div className="line bottoml"></div>
+                <div className="line rightl"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Surprise Events Section */}
+        <div className="section-title">🤩 Surprise Event</div>
+        <div className="container">
+          {[
+            
+            { title: "Revealing", subtitle: "Soon ..." },
+            
+          ].map((event, index) => (
+            <div className="outer" key={index}>
+              <div className="dot"></div>
+              <div className="card1">
+                <div className="ray"></div>
+                <div className="text">{event.title}</div>
+                <h5>{event.subtitle}</h5>
+                <br />
+                <button
+                  className="custom-btn"
+                  onClick={() => (window.location.href = "")}
                 >
                   Register
                 </button>
@@ -108,9 +135,10 @@ const Events = () => {
           ))}
         </div>
       </div>
+      
 
       {/* Footer */}
-      <footer>Developed by Naveenkumar R - IT</footer>
+      <footer>Developed by Naveenkumar R - IT , Kavin Pradheep S T - AIML , Bharath N K - AIML</footer>
     </div>
   );
 };

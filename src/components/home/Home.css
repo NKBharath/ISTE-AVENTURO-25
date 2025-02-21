@@ -27,7 +27,7 @@
   
   /* Navbar */
   nav {
-    background: #000;
+    background: #000000;
     height: 80px;
     width: 100%;
     display: flex;
@@ -92,6 +92,7 @@
   .marquee-container h1 {
     text-align: center;
     font-size: 30px;
+    margin-bottom: 50px;
   }
   
   .marquee {

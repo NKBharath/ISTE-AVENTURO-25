@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./components/home/Home"; // Import Home component
-import Event from "./components/events/Events"; // Import Home component
+import Event from "./components/events/Events"; // Import Event component
 import particlesConfig from "./particles-config.json";
 import "./App.css";
 import image1 from "./assets/3d_icons.png";
@@ -66,14 +66,22 @@ function MainPage() {
           <div className="countdown-container" data-aos="fade-right">
             <h2 className="text-white">Game Starts Soon!!!</h2>
             <div className="countdown">
-              {Object.keys(timeLeft).map((interval) => (
-                <div className="count" key={interval}>
-                  <div className="title">
-                    <h1>{timeLeft[interval]}</h1>
-                  </div>
-                  <p className="text-white">{interval}</p>
-                </div>
-              ))}
+              <div className="count">
+                <div className="title"><h1>{timeLeft.days}</h1></div>
+                <p className="text-white">DAYS</p>
+              </div>
+              <div className="count">
+                <div className="title"><h1>{timeLeft.hours}</h1></div>
+                <p className="text-white">HOURS</p>
+              </div>
+              <div className="count">
+                <div className="title"><h1>{timeLeft.minutes}</h1></div>
+                <p className="text-white">MINUTES</p>
+              </div>
+              <div className="count">
+                <div className="title"><h1>{timeLeft.seconds}</h1></div>
+                <p className="text-white">SECONDS</p>
+              </div>
             </div>
           </div>
 

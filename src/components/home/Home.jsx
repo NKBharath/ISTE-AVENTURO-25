@@ -3,6 +3,9 @@ import { Link } from "react-router-dom"; // Import Link
 import "./Home.css"; // Import the external CSS file
 import sg1 from "../../assets/Frame 114.png";
 import sg2 from "../../assets/Frame 113.png";
+import img1 from "../../assets/ISTEIMG1.png";
+import img2 from "../../assets/ISTEIMG2.png";
+import img3 from "../../assets/ISTEIMG3.png";
 import particlesConfig from "../../particles-config.json"; // Import particle configuration
 
 const Home = () => {
@@ -34,7 +37,6 @@ const Home = () => {
         <ul>
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/events">Events</Link></li>
-          <li><Link to="/timeline">Timeline</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
@@ -71,6 +73,18 @@ const Home = () => {
           <img
             src="https://kongu.ac.in/achievements/faculty/2002_mech_sathish.jpg"
             alt="Image 6"
+          />
+          <img
+            src={img1}
+            alt="Image 7"
+          />
+          <img
+            src={img2}
+            alt="Image 8"
+          />
+          <img
+            src={img3}
+            alt="Image 9"
           />
         </div>
       </div>
