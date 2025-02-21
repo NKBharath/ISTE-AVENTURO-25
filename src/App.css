@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 1440px;
+  margin: auto;
+  height: 55%;
+}
+
+/* Background Images */
+.backimg1,
+.backimg2 {
+  position: absolute;
+  z-index: -1;
+}
+
+.backimg1 {
+  top: 0;
+  left: 0;
+}
+
+.backimg2 {
+  bottom: 0;
+  right: 0;
+}
+
+/* Countdown Styles */
+.countdown-container h2,
+.countdown1-container h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+}
+
+.countdown,
+.countdown1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown .count,
+.countdown1 .count1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown .title,
+.countdown1 .title {
+  background-color: #2c2c44;
+  border-radius: 5px;
+  margin-bottom: 1.3rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown .title h1,
+.countdown1 .title h1 {
+  color: hsl(345deg, 95%, 68%);
+  font-size: 3rem;
+}
+
+.countdown .count p,
+.countdown1 .count1 p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 4%);
+  font-weight: 500;
+}
+
+.countdown .count:not(:last-child),
+.countdown1 .count1:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .countdown-container h2,
+  .countdown1-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .countdown,
+  .countdown1 {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .countdown .title,
+  .countdown1 .title {
+    width: 80px;
+    height: 80px;
+  }
+
+  .countdown .title h1,
+  .countdown1 .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .countdown .count p,
+  .countdown1 .count1 p {
+    font-size: 0.6rem;
+  }
+
+  .countdown .count:not(:last-child),
+  .countdown1 .count1:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-container h2,
+  .countdown1-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .countdown,
+  .countdown1 {
+    flex-direction: row;
+    gap: 0.1rem;
+  }
+
+  .countdown .title,
+  .countdown1 .title {
+    width: 70px;
+    height: 70px;
+  }
+
+  .countdown .title h1,
+  .countdown1 .title h1 {
+    font-size: 2rem;
+  }
+
+  .countdown .count p,
+  .countdown1 .count1 p {
+    font-size: 0.55rem;
+  }
+
+  .countdown .count:not(:last-child),
+  .countdown1 .count1:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+/* Button Styles */
+.register-btn {
+  background-color:  #e84181;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color:  #e84181;
+}
+
+.btn-style {
+  margin-left: 100px;
+}
+
+/* Particles.js Container */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #000;
+}
+
+/* Additional Styles for Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.left-split,
+.right-split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-split {
+  flex: 1;
+  padding: 2rem;
+}
+
+.right-split {
+  flex: 1;
+  padding: 2rem;
+}
+
+.squid-game-head {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.squidgame-soldiers {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.board {
+  background-color: rgba(44, 44, 68, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pinkblur-bg,
+.pinkblur-bg2 {
+  position: absolute;
+  background: rgba(232, 65, 129, 0.2);
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.pinkblur-bg {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 10%;
+}
+
+.pinkblur-bg2 {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  right: 10%;
+}
