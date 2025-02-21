@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
+import sg1 from "../../assets/Frame 114.png";
 import "./Events.css"; 
+import particlesConfig from "../../particles-config.json";
 
 const Events = () => {
   // Load particles.js dynamically
@@ -7,7 +9,9 @@ const Events = () => {
     const script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
     script.onload = () => {
-      window.particlesJS("particles-js", particlesConfig);
+      if (window.particlesJS) {
+        window.particlesJS("particles-js", particlesConfig);
+      }
     };
     document.body.appendChild(script);
 
@@ -15,83 +19,6 @@ const Events = () => {
       document.body.removeChild(script);
     };
   }, []);
-
-  // Particles.js configuration
-  const particlesConfig = {
-    particles: {
-      number: {
-        value: 80,
-        density: {
-          enable: true,
-          value_area: 800,
-        },
-      },
-      color: {
-        value: "#E84181",
-      },
-      shape: {
-        type: "circle",
-      },
-      opacity: {
-        value: 0.5,
-        random: true,
-        anim: {
-          enable: true,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: false,
-        },
-      },
-      size: {
-        value: 3,
-        random: true,
-        anim: {
-          enable: true,
-          speed: 2,
-          size_min: 0.1,
-          sync: false,
-        },
-      },
-      move: {
-        enable: true,
-        speed: 1,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        bounce: false,
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
-      },
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse",
-        },
-        onclick: {
-          enable: true,
-          mode: "push",
-        },
-        resize: true,
-      },
-      modes: {
-        repulse: {
-          distance: 100,
-          duration: 0.4,
-        },
-        push: {
-          particles_nb: 4,
-        },
-      },
-    },
-    retina_detect: true,
-  };
 
   return (
     <div>
@@ -101,14 +28,14 @@ const Events = () => {
       {/* Navigation Bar */}
       <nav>
         <label className="logo">
-          <img src="Frame 114.png" alt="Squid Game Logo" />
+          <img src={sg1} alt="Squid Game Logo" />
         </label>
         <ul>
           <li>
-            <a href="home.html">Home</a>
+            <a href="/home">Home</a>
           </li>
           <li>
-            <a href="events.html">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
             <a href="timeline.html">Timeline</a>
