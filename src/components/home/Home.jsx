@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link
 import "./Home.css"; // Import the external CSS file
-import sg1 from "../../assets/Frame 114.png";
+import sg1 from "../../assets/aventuro25.png";
 import sg2 from "../../assets/Frame 113.png";
 import img1 from "../../assets/ISTEIMG1.png";
 import img2 from "../../assets/ISTEIMG2.png";

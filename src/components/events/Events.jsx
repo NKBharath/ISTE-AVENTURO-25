@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import sg1 from "../../assets/Frame 114.png";
+import aventuro25 from "../../assets/aventuro25.png";
 import "./Events.css"; 
 import particlesConfig from "../../particles-config.json";
 
@@ -28,7 +28,7 @@ const Events = () => {
       {/* Navigation Bar */}
       <nav>
         <label className="logo">
-          <img src={sg1} alt="Squid Game Logo" />
+          <img src={aventuro25} alt="Squid Game Logo" />
         </label>
         <ul>
           <li>
@@ -38,7 +38,7 @@ const Events = () => {
             <a href="/events">Events</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </nav>
