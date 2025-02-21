@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link
 import "./Home.css"; // Import the external CSS file
-import sg1 from "../../assets/Frame 114.png";
+import sg1 from "../../assets/aventuro25.png";
 import sg2 from "../../assets/Frame 113.png";
 import particlesConfig from "../../particles-config.json"; // Import particle configuration
 
