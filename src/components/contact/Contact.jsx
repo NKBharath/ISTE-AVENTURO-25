@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css"; // Import the CSS file
 import aventuro25 from "../../assets/aventuro25.png"; // Import the image
+import particlesConfig from "../../particles-config.json"; // Import particle configuration
+
 const Contact = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
+    script.onload = () => {
+      if (window.particlesJS) {
+        window.particlesJS("particles-js", particlesConfig);
+      }
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <>
+    
+    <div>
+      {/* Particles.js Background */}
+      <div id="particles-js"></div>
       <nav>
         <label className="logo">
           <img src={aventuro25} alt="Squid Game Logo" />
@@ -77,7 +97,7 @@ const Contact = () => {
         </div>
       </div>
       <footer>Developed by Naveenkumar R - IT , Kavin Pradheep S T - AIML , Bharath N K - AIML</footer>
-    </>
+    </div>
   );
 };
 
