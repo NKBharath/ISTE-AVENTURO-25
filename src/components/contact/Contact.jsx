@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <footer>Developed by Naveenkumar R - IT , Kavin Pradheep S T - AIML , Bharath N K - AIML</footer>
+      <footer>Developed by Naveenkumar R - IT |Bharath N K - AIML | Kavin Pradheep S T - AIML </footer>
     </div>
   );
 };

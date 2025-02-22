@@ -92,6 +92,7 @@ const Home = () => {
       {/* Footer */}
       <footer>
         <p>&copy; 2023 Aventuro 2k25. All rights reserved.</p>
+        <footer>Developed by Naveenkumar R - IT |Bharath N K - AIML | Kavin Pradheep S T - AIML </footer>
       </footer>
     </div>
   );
