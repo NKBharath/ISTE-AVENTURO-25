@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.css"; // Import the CSS file
+import "./contact.css"; // Import the CSS file
 import aventuro25 from "../../assets/aventuro25.png"; // Import the image
 import particlesConfig from "../../particles-config.json"; // Import particle configuration
 
