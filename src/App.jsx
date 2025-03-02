@@ -23,7 +23,7 @@ function MainPage() {
   });
 
   function calculateTimeLeft() {
-    const launchDate = new Date("2025-02-28T12:00:00").getTime();
+    const launchDate = new Date("2025-03-05T09:00:00").getTime();
     const now = new Date().getTime();
     const difference = launchDate - now;
     let timeLeft = {};
