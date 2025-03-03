@@ -79,7 +79,7 @@ const Events = () => {
         <div className="section-title">Non-Tech Events</div>
         <div className="container">
           {[
-            { title: "Squid", subtitle: "Game" },
+            { title: "Photography" },
             { title: "IPL", subtitle: "Auction" },
             { title: "Treasure", subtitle: "Hunt" },
           ].map((event, index) => (
@@ -110,7 +110,7 @@ const Events = () => {
         <div className="container">
           {[
             
-            { title: "Revealing", subtitle: "Soon ..." },
+            { title: "Squid", subtitle: "Game" },
             
           ].map((event, index) => (
             <div className="outer" key={index}>
@@ -122,7 +122,7 @@ const Events = () => {
                 <br />
                 <button
                   className="custom-btn"
-                  onClick={() => (window.location.href = "")}
+                  onClick={() => window.open("https://forms.gle/nUmap82DPDWNxvbE7")}
                 >
                   Register
                 </button>
